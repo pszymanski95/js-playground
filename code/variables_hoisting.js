@@ -13,7 +13,6 @@
   _const_ behaves the same way as _let_ but it can't be reassigned (It must be initialized on declaration).
 */
 
-/* ----------------------------------- */
 var anna = 'Anna';
 let bella = 'Bella';
 const charlotte = 'Charlotte';
@@ -22,10 +21,9 @@ console.log(anna, bella, charlotte);
 
 anna = 'Amelia';
 bella = 'Beatrix';
-// // charlotte = 'Caroline'; // 💣 Will throw an error - Uncaught TypeError: Assignment to constant variable.
+// charlotte = 'Caroline'; // 💣 charlote is a constant, will throw an error - Uncaught TypeError: Assignment to constant variable.
 
 console.log(anna, bella, charlotte);
-/* ----------------------------------- */
 
 /*
     HOISTING
@@ -39,10 +37,9 @@ console.log(anna, bella, charlotte);
   functions are stored as reference.
 */
 
-/* ----------------------------------- */
 console.log(alexandra);
-// console.log(mary); // 💣 Will throw an error - Uncaught ReferenceError: Cannot access 'b' before initialization.
-// console.log(patricia); // 💣 Will throw an error - Uncaught ReferenceError: Cannot access 'c' before initialization.
+// console.log(mary); // 💣 mary is unitialized, will throw an error - Uncaught ReferenceError: Cannot access 'mary' before initialization.
+// console.log(patricia); // 💣 patricia is unitialized, will throw an error - Uncaught ReferenceError: Cannot access 'patricia' before initialization.
 console.log(jennifer()); // 🛸 Will work, because reference to the function has been hoisted!
 
 var alexandra = 'Alexandra';
@@ -51,16 +48,13 @@ const patricia = 'Patricia';
 function jennifer() {
   return 'Jennifer';
 }
-/* ----------------------------------- */
 
 /*
   It is possible to read value that is not declared, but it won't be hoisted (only declarations are hoisted).
 */
 
-/* ----------------------------------- */
-// console.log(linda); // 💣 Will throw an error - Uncaught ReferenceError: linda is not defined
+// console.log(linda); // 💣 linda doesn't exist, will throw an error - Uncaught ReferenceError: linda is not defined
 
 linda = 'Linda';
 
 console.log(linda);
-/* ----------------------------------- */
