@@ -7,7 +7,7 @@ Javascrit Playground is a place to run and play with Javascript language. Here, 
 ## TODO list
 
 - [x] Variables and constants (`var`, `let`, `const`)
-- [] Closures
+- [ ] Closures
 - [x] Hoisting
 - [ ] Data structures
 - [ ] Functions
