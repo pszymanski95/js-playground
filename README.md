@@ -12,7 +12,7 @@ Javascrit Playground is a place to run and play with Javascript language. Here, 
 - [ ] Data structures
 - [ ] Functions
 - [ ] Higher order functions
-- [ ] Destructuring
+- [x] Destructuring
 - [ ] Objects
 - [ ] Classes
 - [ ] `this`
