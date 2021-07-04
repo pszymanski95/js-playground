@@ -17,7 +17,7 @@ Javascrit Playground is a place to run and play with Javascript language. Here, 
 - [ ] Classes
 - [ ] `this`
 - [ ] Timers
-- [ ] Strict-mode
+- [x] Strict-mode
 - [ ] Promises
 - [ ] Async / Awaits
 
